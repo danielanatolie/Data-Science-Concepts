@@ -23,3 +23,16 @@ ages = np.random.randint(18, high=90, size=500)
 # print ages
 from scipy import stats
 print stats.mode(ages)
+
+#-------
+print " "
+#Standard Deviation and Variance
+import matplotlib.pyplot as plt
+
+incomes = np.random.normal(100.0, 20.0, 10000)
+
+plt.hist(incomes, 50)
+plt.show()
+print incomes.std()
+print incomes.var()
+
